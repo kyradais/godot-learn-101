@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bbqmohudtxiqy"]
+
+[ext_resource type="Texture2D" uid="uid://cw2okvn5kfaqf" path="res://icon.svg" id="1_5fitt"]
+[ext_resource type="Shader" uid="uid://me8qaxbnijdl" path="res://2d_shader/2d_shader_demo.gdshader" id="1_15ovm"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vagi5"]
+shader = ExtResource("1_15ovm")
+shader_parameter/strength = 0.015
+shader_parameter/speed = 20.0
+
+[node name="2dShaderDemo" type="Node2D" unique_id=1386571556]
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=913103172]
+material = SubResource("ShaderMaterial_vagi5")
+position = Vector2(547.99994, 1129)
+scale = Vector2(2.8984375, 2.8984375)
+texture = ExtResource("1_5fitt")
